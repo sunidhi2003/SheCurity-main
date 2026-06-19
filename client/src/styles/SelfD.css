@@ -1,0 +1,71 @@
+/* ============================================
+   SheCurity - Self Defense Page
+   ============================================ */
+
+.selfdefense-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 100px 24px 60px;
+}
+
+.selfdefense-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.selfdefense-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.technique-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.technique-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.technique-card__video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.technique-card__body {
+  padding: 20px;
+}
+
+.technique-card__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.technique-card__desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.technique-card__level {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.level-beginner { background: rgba(34,197,94,0.15); color: #22c55e; }
+.level-intermediate { background: rgba(245,158,11,0.15); color: #f59e0b; }
+.level-advanced { background: rgba(239,68,68,0.15); color: #ef4444; }

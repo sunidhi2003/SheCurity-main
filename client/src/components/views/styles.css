@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-wrapper {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.text-section {
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-section p{
+    color: #a67c92;
+}
+.text-section h1 {
+    font-weight: bold;
+    color:rgb(4, 4, 84);
+    font-size: 50px;
+    text-shadow: 3px 3px 8px rgba(4, 4, 84, 0.5);
+    background: linear-gradient(90deg, rgba(4, 4, 84, 0.2), rgba(255, 255, 255, 0.5));
+
+    
+}
+
+.text-section span {
+    font-style: italic;
+    font-weight: normal;
+}
+.top-container {
+    width: 42%;
+    height: 400px;
+    background: #7d9fb7;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: -20px;
+}
+.bottom-section {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.bottom-left {
+    width: 45%;
+    background: #c97c7c;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 450px;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.bottom-left img{
+    margin-left: 100px;
+}
+.bottom-right {
+    width: 45%;
+    background:#a67c92;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 250px;
+    margin-bottom: 100px;
+    margin-left: -20px;
+}
+.section-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.header-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #6a0653;
+    text-shadow: 5px 5px 15px rgba(226, 61, 215, 0.7);
+    /* background: linear-gradient(90deg, rgba(125, 60, 152, 0.3), rgba(255, 255, 255, 0.5)); */
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

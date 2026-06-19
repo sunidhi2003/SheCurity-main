@@ -1,0 +1,45 @@
+/* ============================================
+   SheCurity - Main.css (Global Overrides)
+   ============================================ */
+
+/* Body padding for fixed navbar */
+body {
+  padding-top: 0 !important;
+}
+
+/* Remove Bootstrap navbar dark bg override */
+.navbar.navbar-dark.bg-dark {
+  background: transparent !important;
+}
+
+/* SOS Button (legacy support) */
+.sos-btn {
+  background: linear-gradient(135deg, #dc2626, #991b1b) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  padding: 8px 16px !important;
+  border-radius: 50px !important;
+  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.4) !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer;
+  animation: sos-pulse 2s infinite;
+}
+
+.sos-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.6) !important;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .sos-btn { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}
+
+/* Focus indicators */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

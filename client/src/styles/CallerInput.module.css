@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #ffdde1, #ffb6c1, #ff9aa2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Glassmorphism Effect */
+.container, .fake-call-screen {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(255, 105, 180, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover, .fake-call-screen:hover {
+    box-shadow: 0px 12px 35px rgba(255, 105, 180, 0.6);
+}
+
+/* Labels & Inputs */
+label {
+    color: white;
+    font-weight: 500;
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 92%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 12px rgba(255, 182, 193, 0.9);
+}
+
+/* Buttons */
+button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.start-call-btn {
+    background: linear-gradient(135deg, #ff9aa2, #ff69b4);
+    color: white;
+    box-shadow: 0px 5px 12px rgba(255, 105, 180, 0.5);
+}
+
+.start-call-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 8px 18px rgba(255, 105, 180, 0.7);
+}
+
+/* Call Screens */
+.fake-call-screen {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 12px 35px rgba(255, 105, 180, 0.6);
+}
+
+/* Incoming Call Animation */
+@keyframes ring {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+#incomingCall {
+    animation: ring 1.2s infinite;
+}
+
+/* Call Header */
+.call-header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff69b4;
+    margin-bottom: 12px;
+}
+
+/* Accept & Reject Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.accept, .reject {
+    padding: 12px 22px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 12px rgba(255, 105, 180, 0.4);
+}
+
+.accept {
+    background: linear-gradient(135deg, #ff69b4, #ff4081);
+}
+
+.reject {
+    background: linear-gradient(135deg, #ff6666, #ff3b3b);
+}
+
+.accept:hover {
+    background: linear-gradient(135deg, #ff4081, #ff1f62);
+    transform: scale(1.1);
+}
+
+.reject:hover {
+    background: linear-gradient(135deg, #ff3b3b, #d12c2c);
+    transform: scale(1.1);
+}
+
+/* Call Options */
+.call-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+
+.option-btn {
+    padding: 14px;
+    border-radius: 50px;
+    background: white;
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+.option-btn:hover {
+    background: #ff69b4;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* End Call Button */
+.end-call-btn {
+    margin-top: 22px;
+    background: red;
+    color: white;
+    padding: 16px;
+    border-radius: 50px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 6px 14px rgba(255, 0, 0, 0.4);
+}
+
+.end-call-btn:hover {
+    background: darkred;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 18px rgba(255, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .container, .fake-call-screen {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .start-call-btn {
+        font-size: 14px;
+    }
+
+    .option-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+

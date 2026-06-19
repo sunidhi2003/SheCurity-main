@@ -1,0 +1,31 @@
+{
+  "short_name": "SheCurity",
+  "name": "SheCurity — Women Safety Platform",
+  "description": "India's #1 Women Safety Platform with SOS alerts, live tracking, and AI chatbot.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/home",
+  "display": "standalone",
+  "theme_color": "#c026d3",
+  "background_color": "#0a0118",
+  "orientation": "portrait-primary",
+  "categories": ["utilities", "lifestyle", "social"],
+  "lang": "en"
+}

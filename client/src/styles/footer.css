@@ -1,0 +1,89 @@
+/* ============================================
+   SheCurity - Premium Footer
+   ============================================ */
+
+.footer_wrapper {
+  padding: 80px 0 32px;
+  background: linear-gradient(135deg, #0a0118 0%, #1a0533 100%);
+  color: rgba(255,255,255,0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer_wrapper::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(192, 38, 211, 0.08);
+  border-radius: 50%;
+  filter: blur(100px);
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.footer_wrapper .footer_logo img {
+  max-width: 30%;
+}
+
+.footer_wrapper .footer_text,
+.footer_wrapper .footer_text a {
+  margin-top: 20px;
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer_wrapper .footer_text a:hover {
+  color: var(--primary-light, #e879f9);
+}
+
+.footer_wrapper .footer_title {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.footer_wrapper .footer_social_media_icon {
+  padding-right: 20px;
+  font-size: 20px;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.footer_wrapper .footer_social_media_icon:hover {
+  color: var(--primary-light, #e879f9);
+  transform: translateY(-3px);
+}
+
+.footer_wrapper .footer_credits {
+  color: rgba(255,255,255,0.4);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 24px;
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.footer_wrapper .footer_credits a {
+  background: linear-gradient(135deg, #c026d3, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .footer_wrapper .footer_logo img { max-width: 50%; }
+  .footer_wrapper { padding: 60px 0 24px; }
+}

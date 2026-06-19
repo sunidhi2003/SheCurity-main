@@ -1,0 +1,284 @@
+/* ============================================
+   SheCurity - Safety Info / Law Guide
+   ============================================ */
+
+.safety-page {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding: 100px 24px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.safety-bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.safety-bg-orb--1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(124, 58, 237, 0.08);
+  top: -100px;
+  right: -100px;
+}
+
+.safety-bg-orb--2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(192, 38, 211, 0.06);
+  bottom: -80px;
+  left: -80px;
+}
+
+.safety-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.safety-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* Helplines */
+.safety-helplines {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 40px;
+}
+
+.safety-helplines__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.safety-helplines__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.safety-helpline-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.safety-helpline-card:hover {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.4);
+  transform: translateY(-2px);
+}
+
+.safety-helpline-card__icon {
+  font-size: 24px;
+}
+
+.safety-helpline-card__name {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.safety-helpline-card__number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ef4444;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+/* Laws Grid */
+.safety-laws-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+/* Law Card */
+.safety-law-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--law-color, var(--primary));
+}
+
+.safety-law-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.safety-law-card--open {
+  border-color: var(--law-color, var(--primary));
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.safety-law-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.safety-law-card__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.safety-law-card__icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.safety-law-card__title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.safety-law-card__tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--law-color, var(--primary));
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--law-color, var(--primary));
+  padding: 2px 10px;
+  border-radius: 50px;
+  opacity: 0.8;
+}
+
+.safety-law-card__chevron {
+  font-size: 12px;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+}
+
+.safety-law-card__body {
+  padding: 0 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeInUp 0.3s ease;
+}
+
+.safety-law-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.safety-law-item__label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--law-color, var(--primary));
+  margin-bottom: 4px;
+}
+
+.safety-law-item__desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Action Box */
+.safety-action-box {
+  background: linear-gradient(135deg, rgba(192,38,211,0.08), rgba(124,58,237,0.08));
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.safety-action-box__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.safety-action-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.safety-action-step {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.safety-action-step__num {
+  width: 32px;
+  height: 32px;
+  background: var(--gradient-main);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.safety-action-step__text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.safety-quote {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .safety-helplines__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .safety-helplines__grid { grid-template-columns: 1fr; }
+  .safety-law-card__header { padding: 16px; }
+  .safety-law-card__body { padding: 0 16px 16px; }
+}
