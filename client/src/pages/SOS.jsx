@@ -329,7 +329,7 @@ Please respond immediately.`,
     stopCamera();
   };
 
-}, []);
+}, [stopCamera]);
 
   if (!isVisible) return null;
 

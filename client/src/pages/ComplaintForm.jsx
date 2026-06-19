@@ -336,7 +336,6 @@ import axios from "axios";
 import { BASE_URL } from "../config";
 import { socket } from "../helpers/socketHelper"; // make sure you export socket from here
 import styles from "../styles/ComplaintForm.module.css";
-import { defaultFormat } from "moment";
 
 const ComplaintForm = () => {
   const [formData, setFormData] = useState({
