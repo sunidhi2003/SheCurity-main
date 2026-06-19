@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/about.css";
 import about from "../images/aboutUs.png";
 import about2 from "../images/aboutUs2.png";
@@ -38,7 +38,7 @@ const About = () => {
               </div> */}
             </div>
             <div className="col-sm-12 col-lg-7 text-center text-md-start">
-              <img decoding="async" src={about} className="img-fluid" />
+               <img decoding="async" src={about} alt="About Us" className="img-fluid" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const About = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-sm-12 col-lg-6 px-5 text-center text-md-start">
-                <img decoding="async" src={about2} className="img-fluid" />
+               <img decoding="async" src={about2} alt="Safety" className="img-fluid" />
               </div>
               <div className="col-sm-12 col-lg-6 text-center text-lg-start">
                 <p className="about_number">2</p>
