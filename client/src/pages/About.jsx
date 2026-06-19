@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/about.css";
 import about from "../images/aboutUs.png";
 import about2 from "../images/aboutUs2.png";
