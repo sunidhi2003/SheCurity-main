@@ -32,20 +32,18 @@ const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:3000";
 // Create HTTP server and WebSocket server
 const httpServer = http.createServer(app);
 const io = require("socket.io")(httpServer, {
-  cors: { 
-    origin: [CLIENT_URL, "http://localhost:3000", "http://localhost:3001"],
-    credentials: true,
-    methods: ["GET", "POST"]
-  },
+  cors: {
+    origin: true,
+    credentials: true
+  }
 });
 
 // Middleware
 app.set("io",io);
 app.use(express.json());
-app.use(cors({ 
-  origin: [CLIENT_URL, "http://localhost:3000", "http://localhost:3001"], 
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+app.use(cors({
+  origin: true,
+  credentials: true
 }));
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
